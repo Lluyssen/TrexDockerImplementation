@@ -1,8 +1,9 @@
-# TrexDockerImplementation
+# TRex Docker Implementation
+
+
+TRex stateless traffic generator : Trex Gui Client and Trex Server
+
 
 
 ![](Login.jpg)
 
-
-
-Trex stateless traffic generator : Trex Gui Client and Trex Server
