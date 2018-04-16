@@ -22,7 +22,7 @@ C> : Container command <br />
 2) Run the Trex image with bash and allocate the différent port for Docker Gui Connexion <br />
 3) Start the server with the interactive option <br />
 
-> If you don't use the Trex Gui, you can manage your serv. For this open a new term in the same computer and to this
+> If you don't use the Trex Gui, you can manage your serv. For this open a new term in the same computer and do this
 
 ```sh
 	B> docker exec -it 'Container ID' bash
