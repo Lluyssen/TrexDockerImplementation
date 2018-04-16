@@ -16,11 +16,11 @@ Linux:
 
 Update and Upgrade ==> Basic <br />
 Add Webupd8 repository ==> Installe the Personal Package Archive for Oracle Java JDK 8 par webupd8 <br />
-Install Addictional Pack ==> Installe  des packs graphiques <br />
-Install Java ==> Instalation de Orcale Java 8 <br />
-Clean Up ==> Clean l'ensemble de fichier pour java <br />
-CMD => crée la commande de lancement automatique <br />
-TresGui Part ==> Clone depuis git le trex-stateless-gui dans le dossier /usr/local/gui/ et le tar <br />
+Install Addictional Pack ==> Installe  graphics package <br />
+Install Java ==> Install Orcale Java 8 <br />
+Clean Up ==> Clean java file <br />
+CMD => Start command for execute the gui <br />
+TresGui Part ==> Clone and add différent files for Trex fonctionnement <br />
 
 ## Release History
 

@@ -35,7 +35,7 @@ C> : Container command <br />
 
 B> : Bash command <br />
 C> : Container command <br />
-t> : Trex command <br />
+T> : Trex command <br />
 
 1) exec the container with bash <br />
 2) start the trex-console1 <br /> 
