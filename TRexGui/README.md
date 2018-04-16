@@ -11,7 +11,7 @@ Linux:
 	docker run -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY trex_gui:latest
 ```
 
-## Explication of the Readme
+## Explication of the DockerFile
 
 Update and Upgrade ==> Basic <br />
 Add Webupd8 repository ==> Installe the Personal Package Archive for Oracle Java JDK 8 par webupd8 <br />
@@ -37,3 +37,4 @@ TresGui Part ==> Clone depuis git le trex-stateless-gui dans le dossier /usr/loc
 
 1. Fork it (<https://github.com/Lluyssen/TrexDockerImplementation>)
 2. Form (<https://github.com/cisco-system-traffic-generator>)
+2. Form (<https://github.com/cisco-system-traffic-generator/trex-stateless-gui>)
