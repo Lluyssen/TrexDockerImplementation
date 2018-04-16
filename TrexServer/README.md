@@ -1,36 +1,48 @@
-=====================
-====  Trex Serv  ====
-===   On Docker   ===
-=====================
+# Trex Server
+>It's a container and the explication for the Trex Server part, you can manage your TrexServ from this module and show differents graph of the flux.
 
+![](Login.png)
 
-Explication :
--------------
+## Installation
 
-B> : Bash
-C> : Container
-T> : Trex
+Linux:
 
-Terminal 1
-------------------------------------------------------------------------------------------------------------------
-B> docker pull trexcisco/trex:2.36					|	Pull the Trex Docker		 |
-B> docker run --rm -it --privileged --cap-add=ALL trexcisco/trex:2.36	|	Run the Trex iamge with Bash	 |
-C> ./t-rex-64 -i							|	Start the server   		 |
-	   									 -> (display the Port trafics)	 |
-------------------------------------------------------------------------------------------------------------------
+```sh
+	B> docker pull trexcisco/trex:2.36
+	B> docker run --rm -it --privileged --cap-add=ALL -p 4507:4507 -p 4501:4501 -p 4500:4500 trexcisco/trex:2.36
+	C> ./t-rex-64 -i
+```
 
-If you don't use the TrexGui Docker, open en new terminal inside the same computer
+## Explication
 
-Terminal 2
-------------------------------------------------------------------------------------------------------------------
-B> docker exec -it 'Container ID' bash					|	Exec the container with Bash	 |
-C> ./trex-console  	      	  					|	Start Client with Stateless mode |
-   										      -> default localhost:4501  |
-   										      -> -s 'ip server'		 |
-										      -> -p 'port'		 |
-T> start -f stl/imix.py -m 10kpps --port 0				|	Start trafic			 |
-   	    		      	  	 					      -> with Imix mode		 |
-										      -> with 10k connections	 |
-										      -> on port 0		 |
-T> tui									|	Show Stats			 |
-------------------------------------------------------------------------------------------------------------------
+B> : Bash command <br />
+C> : Container command <br />
+
+1) pull the Trex Docker <br />
+2) Run the Trex image with bash and allocate the différent port for Docker Gui Connexion <br />
+3) Start the server with the interactive option <br />
+
+> If you don't use the Trex Gui, you can manage your serv. For this open a new term in the same computer and to this
+
+```sh
+	B> docker exec -it 'Container ID' bash
+	C> ./tex-console
+	T> start -f stl/imix.py -m 10kpps --port 0
+	T> tui
+```
+
+## Explication
+
+B> : Bash command <br />
+C> : Container command <br />
+t> : Trex command <br />
+
+1) exec the container with bash <br />
+2) start the trex-console1 <br /> 
+3) start the imix script on the serv <br />
+4) show the stats of the serv <br />
+
+## Meta
+
+1. Fork it (<https://github.com/Lluyssen/TrexDockerImplementation>)
+2. Form (<https://github.com/cisco-system-traffic-generator>)
