@@ -26,7 +26,7 @@ C> : Container command <br />
 
 ```sh
 	B> docker exec -it 'Container ID' bash
-	C> ./tex-console
+	C> ./trex-console
 	T> start -f stl/imix.py -m 10kpps --port 0
 	T> tui
 ```
